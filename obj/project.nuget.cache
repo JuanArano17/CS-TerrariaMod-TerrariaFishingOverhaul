@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "D3vPfQl26z+DZ6laj9tSuAV/Wd2s/dFowDx0hEQNI7GRR6LI+zt82EYCSy7NjmWhRaUF/yj2TzzFtaivrTtNAw==",
+  "success": true,
+  "projectFilePath": "j:\\Juan Arano\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaFishingOverhaul\\TerrariaFishingOverhaul.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Juan Arano\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
