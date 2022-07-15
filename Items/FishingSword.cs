@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace FishingOverhaul.Items
+namespace TerrariaFishingOverhaul.Items
 {
 	public class FishingSword : ModItem
 	{
