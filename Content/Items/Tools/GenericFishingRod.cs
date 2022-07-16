@@ -1,3 +1,4 @@
+using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria;
 using Terraria.ID;
@@ -58,10 +59,10 @@ namespace TerrariaFishingOverhaul.Content.Items.Tools
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<DirtBlock>(10)
-				.AddTile<Tiles.Furniture.ExampleWorkbench>()
-				.Register();
+			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ItemID.DirtBlock, 10);
+			recipe.AddTile(TileID.Furnaces);
+			recipe.Register();
 		}
 	}
 }
