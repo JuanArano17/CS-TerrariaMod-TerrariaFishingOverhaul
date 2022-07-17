@@ -6,10 +6,11 @@ Create new items:
  .Copper Fishing Pole COMPLETED
  .Ice Fishing Pole IN PROGRESS
  .Mushroom Fisihg Pole NOT STATED
+ .Coral Fishing Pole NOT STARTED
 
 Changes to vanilla items:   IN PROGRESS
 .Add 1 extra fishing line to:
-    .Fisher of Souls
+    .Fisher of Souls    COMPLETED
     .Fleshcatcher
     .Mechanic's Rod
 .Add 2 extra fishing line to:
