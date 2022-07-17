@@ -7,7 +7,7 @@ Create new items:
  .Ice Fishing Pole IN PROGRESS
  .Mushroom Fisihg Pole NOT STATED
 
-Changes to vanilla items:
+Changes to vanilla items:   IN PROGRESS
 .Add 1 extra fishing line to:
     .Fisher of Souls
     .Fleshcatcher
