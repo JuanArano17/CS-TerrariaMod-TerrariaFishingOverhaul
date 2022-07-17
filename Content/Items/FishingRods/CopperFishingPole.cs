@@ -7,11 +7,11 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-	public class MinerFishingPole : ModItem
+	public class CopperFishingPole : ModItem
 	{
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Miner´s Fishing Pole");
-			Tooltip.SetDefault("The Ol'Reliable");
+			DisplayName.SetDefault("Copper Fishing Pole");
+			Tooltip.SetDefault("Simple but better than the Wood Fishing Pole.");
 
 			// Allows the pole to fish in lava
 			//ItemID.Sets.CanFishInLava[Item.type] = true;
@@ -50,7 +50,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 
 		public override void AddRecipes() {
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
+			recipe.AddIngredient(ItemID.CopperBar, 15);
 			recipe.AddTile(TileID.Furnaces);
 			recipe.Register();
 		}
