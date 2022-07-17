@@ -50,7 +50,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 
 		public override void AddRecipes() {
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.CopperBar, 15);
+			recipe.AddIngredient(ItemID.CopperBar, 8);
 			recipe.AddTile(TileID.Furnaces);
 			recipe.Register();
 		}
