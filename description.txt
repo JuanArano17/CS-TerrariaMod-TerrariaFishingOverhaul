@@ -4,10 +4,11 @@
 
 Create new items: 
  .Copper Fishing Pole COMPLETED
- .Icy Fishing Pole IN PROGRESS
- .Mushroom Fisihg Pole NOT STATED
- .Coral Fishing Pole NOT STARTED
- .KrakenTentacle NOT STARTED
+ .Icy Fishing Pole COMPLETED
+ .Mushroom Fisihg Pole COMPLETED
+ .Coral Fishing Pole IN PROGRESS
+ .KrakenTentacle COMPLETED
+ .Bee Fishing Pole IN PROGRESS
 
 Changes to amount of fishing line in fishing items:   IN PROGRESS
 .Add 1 extra fishing line to:   COMPLETED
