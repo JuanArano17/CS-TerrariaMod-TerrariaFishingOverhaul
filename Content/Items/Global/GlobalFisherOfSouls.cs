@@ -15,8 +15,6 @@ namespace TerrariaFishingOverhaul.Common.Items.Global
 
 		public override void SetDefaults(Item item) {
 			item.StatsModifiedBy.Add(Mod); // Notify the game that we've made a functional change to this item.
-
-			item.damage = 50; // Change damage to 50!
 		}
 
         public override bool Shoot(Item item, Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
