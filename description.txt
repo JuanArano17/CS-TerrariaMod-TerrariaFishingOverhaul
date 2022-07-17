@@ -2,6 +2,27 @@
  
  Created By: Smitheh and Codigo86
 
+Create new items: 
  .Copper Fishing Pole COMPLETED
- .Ice Fishing Pole
- .Mushroom Fisihg Pole
+ .Ice Fishing Pole IN PROGRESS
+ .Mushroom Fisihg Pole NOT STATED
+
+Changes to vanilla items:
+.Add 1 extra fishing line to:
+    .Fisher of Souls
+    .Fleshcatcher
+    .Mechanic's Rod
+.Add 2 extra fishing line to:
+    .Scarab Fishing Rod
+    .Fiberglass Fishing Pole
+    .Icy Fishing Pole
+    .Truffle Fishing Pole
+    .Sitting Duck's Fishing Pole
+.Add 3 extra fishing line to:
+    .Chum Caster
+.Add 4 extra fishing line to:
+    .Hotline Fishing Hook
+.Add 5 extra fishing line to:
+    .Golden Fishing Rod
+.Add 7 extra fishing line to:
+    .Supreme Fishing Rod
