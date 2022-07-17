@@ -5,14 +5,13 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 
-namespace TerrariaFishingOverhaul.Content.Items.Tools.FishingRods
+namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-	public class GenericFishingRod : ModItem
+	public class MinerFishingPole : ModItem
 	{
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Example Fishing Rod");
-			Tooltip.SetDefault("Fires multiple lines at once. Can fish in lava.\n" +
-				"The fishing line never snaps.");
+			DisplayName.SetDefault("Miner´s Fishing Pole");
+			Tooltip.SetDefault("The Ol'Reliable");
 
 			// Allows the pole to fish in lava
 			//ItemID.Sets.CanFishInLava[Item.type] = true;
@@ -31,7 +30,7 @@ namespace TerrariaFishingOverhaul.Content.Items.Tools.FishingRods
 			// Item.UseSound = SoundID.Item1;
 			Item.CloneDefaults(ItemID.WoodFishingPole);
 
-			Item.fishingPole = 200; // Sets the poles fishing power
+			Item.fishingPole = 10; // Sets the poles fishing power
 			Item.shootSpeed = 12f; // Sets the speed in which the bobbers are launched. Wooden Fishing Pole is 9f and Golden Fishing Rod is 17f.
 			Item.shoot = ModContent.ProjectileType<Projectiles.ExampleBobber>(); // The Bobber projectile.
 		}
@@ -42,22 +41,13 @@ namespace TerrariaFishingOverhaul.Content.Items.Tools.FishingRods
 			player.accFishingLine = true;
 		}
 
-		// Overrides the default shooting method to fire multiple bobbers.
-		// NOTE: This will allow the fishing rod to summon multiple Duke Fishrons with multiple Truffle Worms in the inventory.
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
-			int bobberAmount = 8; //Main.rand.Next(3, 6); 3 to 5 bobbers
-			float spreadAmount = 75f; // how much the different bobbers are spread out.
-
-			for (int index = 0; index < bobberAmount; ++index) {
-				Vector2 bobberSpeed = velocity + new Vector2(Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f, Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f);
-
-				// Generate new bobbers
-				Projectile.NewProjectile(source, position, bobberSpeed, type, 0, 0f, player.whoAmI);
-			}
+			//int bobberAmount = 1; This indicates the amount of Bobbers, in case = 1, not necessary
+            Vector2 bobberSpeed = velocity + new Vector2();
+            Projectile.NewProjectile(source, position, bobberSpeed, type, 0, 0f, player.whoAmI);
 			return false;
 		}
 
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.DirtBlock, 10);
