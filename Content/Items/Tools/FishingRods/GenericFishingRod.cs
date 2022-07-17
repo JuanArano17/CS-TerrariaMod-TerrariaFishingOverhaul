@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 
-namespace TerrariaFishingOverhaul.Content.Items.Tools
+namespace TerrariaFishingOverhaul.Content.Items.Tools.FishingRods
 {
 	public class GenericFishingRod : ModItem
 	{
@@ -45,7 +45,7 @@ namespace TerrariaFishingOverhaul.Content.Items.Tools
 		// Overrides the default shooting method to fire multiple bobbers.
 		// NOTE: This will allow the fishing rod to summon multiple Duke Fishrons with multiple Truffle Worms in the inventory.
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
-			int bobberAmount = Main.rand.Next(3, 6); // 3 to 5 bobbers
+			int bobberAmount = 8; //Main.rand.Next(3, 6); 3 to 5 bobbers
 			float spreadAmount = 75f; // how much the different bobbers are spread out.
 
 			for (int index = 0; index < bobberAmount; ++index) {
