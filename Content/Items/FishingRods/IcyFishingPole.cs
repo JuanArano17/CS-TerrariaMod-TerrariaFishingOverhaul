@@ -32,7 +32,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 			// Item.UseSound = SoundID.Item1;
 			Item.CloneDefaults(ItemID.WoodFishingPole);
 
-			Item.fishingPole = 10; // Sets the poles fishing power
+			Item.fishingPole = 30; // Sets the poles fishing power
 			Item.shootSpeed = 12f; // Sets the speed in which the bobbers are launched. Wooden Fishing Pole is 9f and Golden Fishing Rod is 17f.
 			Item.shoot = ModContent.ProjectileType<Projectiles.IcyBobber>(); // The Bobber projectile.
 		}
@@ -44,11 +44,16 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 			player.accFishingLine = true;
 		}
 
-		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-		{
-			//int bobberAmount = 1; This indicates the amount of Bobbers, in case = 1, not necessary
-			Vector2 bobberSpeed = velocity + new Vector2();
-			Projectile.NewProjectile(source, position, bobberSpeed, type, 0, 0f, player.whoAmI);
+		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
+			int bobberAmount =  3; //Main.rand.Next(3, 6); 3 to 5 bobbers
+			float spreadAmount = 75f; // how much the different bobbers are spread out.
+
+			for (int index = 0; index < bobberAmount; ++index) {
+				Vector2 bobberSpeed = velocity + new Vector2(Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f, Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f);
+
+				// Generate new bobbers
+				Projectile.NewProjectile(source, position, bobberSpeed, type, 0, 0f, player.whoAmI);
+			}
 			return false;
 		}
 
