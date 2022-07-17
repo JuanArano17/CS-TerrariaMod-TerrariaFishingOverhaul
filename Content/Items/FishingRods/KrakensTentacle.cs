@@ -7,10 +7,10 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-	public class KrakenTentacle : ModItem
+	public class KrakensTentacle : ModItem
 	{
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Kraken Tentacle");
+			DisplayName.SetDefault("Kraken's Tentacle");
 			Tooltip.SetDefault("Simple but better than the Wood Fishing Pole.");
 
 			ItemID.Sets.CanFishInLava[Item.type] = true;
@@ -31,7 +31,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 			Item.fishingPole = 70; // Sets the poles fishing power
 			Item.shootSpeed = 16; // Sets the speed in which the bobbers are launched. Wooden Fishing Pole is 9f and Golden Fishing Rod is 17f.
 			//Item.shoot = ModContent.ProjectileType<Projectiles.KrakenBobber>(); // The Bobber projectile.
-			Item.shoot = ModContent.ProjectileType<Projectiles.CopperBobber>();
+			Item.shoot = ModContent.ProjectileType<Projectiles.KrakenBobber>();
 		}
 
 		// Grants the High Test Fishing Line bool if holding the item.

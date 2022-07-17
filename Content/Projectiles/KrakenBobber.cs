@@ -10,11 +10,11 @@ using Terraria.ModLoader;
 
 namespace TerrariaFishingOverhaul.Content.Projectiles
 {
-	public class ExampleBobber : ModProjectile
+	public class KrakenBobber : ModProjectile
 	{
 		public static readonly Color[] PossibleLineColors = new Color[] {
-			new Color(128, 3, 57), // A gold color
-			new Color(129, 10, 204) // A blue color
+			new Color(66, 1, 22), // Rojo oscuro
+			new Color(56, 5, 133) // Violeta claro
 		};
 
 		// This holds the index of the fishing line color in the PossibleLineColors array.
@@ -23,7 +23,7 @@ namespace TerrariaFishingOverhaul.Content.Projectiles
 		private Color FishingLineColor => PossibleLineColors[fishingLineColorIndex];
 
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Example Bobber");
+			DisplayName.SetDefault("Kraken Bobber");
 		}
 
 		public override void SetDefaults() {
