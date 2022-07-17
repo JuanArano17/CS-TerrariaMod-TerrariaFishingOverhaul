@@ -55,7 +55,13 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 
 		public override void AddRecipes() {
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.CopperBar, 8);
+			recipe.AddIngredient(ItemID.WoodFishingPole);
+			recipe.AddIngredient(ModContent.ItemType<IcyFishingPole>());
+			//recipe.AddIngredient(ModContent.ItemType<CoralFishingPole>());
+			recipe.AddIngredient(ItemID.ScarabFishingRod);
+			recipe.AddIngredient(ItemID.FiberglassFishingPole);
+			recipe.AddIngredient(ItemID.HotlineFishingHook);
+			recipe.AddIngredient(ItemID.GoldenFishingRod);
 			recipe.AddTile(TileID.Furnaces);
 			recipe.Register();
 		}
