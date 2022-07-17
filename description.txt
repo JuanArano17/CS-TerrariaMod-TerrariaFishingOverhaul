@@ -16,7 +16,7 @@ Changes to vanilla items:   IN PROGRESS
 .Add 2 extra fishing line to: IN PROGRESS
     .Scarab Fishing Rod             COMPLETED
     .Fiberglass Fishing Pole        COMPLETED
-    .Icy Fishing Pole               IN PROGRESS
+    .Icy Fishing Pole               COMPLETED
     .Truffle Fishing Pole           IN PROGRESS
     .Sitting Duck's Fishing Pole    COMPLETED
 .Add 3 extra fishing line to:IN PROGRESS
