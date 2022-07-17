@@ -9,7 +9,7 @@ Create new items:
  .Coral Fishing Pole NOT STARTED
  .KrakenTentacle NOT STARTED
 
-Changes to vanilla items:   IN PROGRESS
+Changes to amount of fishing line in fishing items:   IN PROGRESS
 .Add 1 extra fishing line to:   COMPLETED
     .Fisher of Souls    COMPLETED
     .Fleshcatcher       COMPLETED
