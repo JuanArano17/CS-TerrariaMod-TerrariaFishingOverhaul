@@ -7,11 +7,11 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-    internal class WaspFishingPole : ModItem
+    internal class BeeFishingPole : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Wasp Fishing Pole");
+			DisplayName.SetDefault("Bee Fishing Pole");
 			Tooltip.SetDefault("");
 
 			// Allows the pole to fish in lava
@@ -34,7 +34,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 
 			Item.fishingPole = 35; // Sets the poles fishing power
 			Item.shootSpeed = 12f; // Sets the speed in which the bobbers are launched. Wooden Fishing Pole is 9f and Golden Fishing Rod is 17f.
-			Item.shoot = ModContent.ProjectileType<Projectiles.WaspBobber>(); // The Bobber projectile.
+			Item.shoot = ModContent.ProjectileType<Projectiles.BeeBobber>(); // The Bobber projectile.
 		}
 
 		// Grants the High Test Fishing Line bool if holding the item.

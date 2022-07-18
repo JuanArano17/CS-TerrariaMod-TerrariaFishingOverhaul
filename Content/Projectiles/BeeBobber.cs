@@ -10,11 +10,11 @@ using Terraria.ModLoader;
 
 namespace TerrariaFishingOverhaul.Content.Projectiles
 {
-	public class WaspBobber : ModProjectile
+	public class BeeBobber : ModProjectile
 	{
 		public static readonly Color[] PossibleLineColors = new Color[] {
 			new Color(252, 212, 25), // A gold color
-			new Color(83, 57, 131)
+			//new Color(83, 57, 131)
 		};
 
 		// This holds the index of the fishing line color in the PossibleLineColors array.
@@ -24,7 +24,7 @@ namespace TerrariaFishingOverhaul.Content.Projectiles
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Wasp Bobber");
+			DisplayName.SetDefault("Bee Bobber");
 		}
 
 		public override void SetDefaults()
