@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
+using TerrariaFishingOverhaul.Content.Items.FishingRods;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
@@ -11,7 +12,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 	{
 		public override void SetStaticDefaults() {
 			DisplayName.SetDefault("Kraken's Tentacle");
-			Tooltip.SetDefault("Simple but better than the Wood Fishing Pole.");
+			Tooltip.SetDefault("");
 
 			ItemID.Sets.CanFishInLava[Item.type] = true;
 
@@ -57,7 +58,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.WoodFishingPole);
 			recipe.AddIngredient(ModContent.ItemType<IcyFishingPole>());
-			//recipe.AddIngredient(ModContent.ItemType<CoralFishingPole>());
+			recipe.AddIngredient(ModContent.ItemType<CoralFishingPole>());
 			recipe.AddIngredient(ItemID.ScarabFishingRod);
 			recipe.AddIngredient(ItemID.FiberglassFishingPole);
 			recipe.AddIngredient(ItemID.HotlineFishingHook);
