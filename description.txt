@@ -29,3 +29,6 @@ Changes to amount of fishing line in fishing items:   IN PROGRESS
     .Golden Fishing Rod IN COMPLETED
 .Add 7 extra fishing line to:   COMPLETED
     .Supreme Fishing Rod    COMPLETED
+
+Special tanks to: ZetaBub, David F Dev.
+For being helping a lot in the discord server.
