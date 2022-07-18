@@ -1,4 +1,4 @@
- It's a must for all of those players who love fishing and all the mechanics related to this activity. 
+ It's a must for all those players who love fishing and everything related. 
  
  Created By: Smitheh and Codigo86
 
@@ -6,9 +6,9 @@ Create new items:
  .Copper Fishing Pole COMPLETED
  .Icy Fishing Pole COMPLETED
  .Mushroom Fisihg Pole COMPLETED
- .Coral Fishing Pole IN PROGRESS
+ .Coral Fishing Pole COMPLETED
  .KrakenTentacle COMPLETED
- .Bee Fishing Pole IN PROGRESS
+ .Bee Fishing Pole COMPLETED
 
 Changes to amount of fishing line in fishing items:   IN PROGRESS
 .Add 1 extra fishing line to:   COMPLETED
