@@ -45,6 +45,7 @@ namespace TerrariaFishingOverhaul.Content.Items.Accessories
 			player.GetDamage(DamageClass.Generic) *= 1.12f;
 			player.GetDamage(DamageClass.Generic).Base += 4f;
 			player.GetDamage(DamageClass.Generic).Flat += 5f;
+			player.fishingLinesAmount += 1;
 
 			// GetCrit, similarly to GetDamage, returns a reference to the specified damage class' crit chance.
 			// In this case, we're adding 10% crit chance, but only for the melee DamageClass (as such, only melee weapons will receive this bonus).

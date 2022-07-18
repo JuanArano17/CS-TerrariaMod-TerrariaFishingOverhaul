@@ -8,6 +8,9 @@ namespace TerrariaFishingOverhaul.Common.Players.Global
 {
     public class GlobalPlayer : ModPlayer
     {
-        
+        public override Players
+        {
+            public int fishingLinesAmount = 1;
+        }
     }
 }
