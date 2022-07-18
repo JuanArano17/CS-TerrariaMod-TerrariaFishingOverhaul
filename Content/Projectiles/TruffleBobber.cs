@@ -23,7 +23,7 @@ namespace TerrariaFishingOverhaul.Content.Projectiles
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Icy Bobber");
+			DisplayName.SetDefault("Truffle Bobber");
 		}
 
 		public override void SetDefaults()

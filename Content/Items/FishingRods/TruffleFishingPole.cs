@@ -11,7 +11,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Trufle Fishing Pole");
+			DisplayName.SetDefault("Truffle Fishing Pole");
 			Tooltip.SetDefault("");
 
 			// Allows the pole to fish in lava
