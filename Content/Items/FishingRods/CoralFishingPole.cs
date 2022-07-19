@@ -49,7 +49,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 			//int bobberAmount =  30; //Main.rand.Next(3, 6); 3 to 5 bobbers
 			float spreadAmount = 75f; // how much the different bobbers are spread out.
 
-			for (int index = 0; index < bobberAmount; ++index) {
+			for (int index = 0; index < player.GetModPlayer<Common.Players.FishingPlayer>().getBobberAmount(); ++index) {
 				Vector2 bobberSpeed = velocity + new Vector2(Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f, Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f);
 
 				// Generate new bobbers
