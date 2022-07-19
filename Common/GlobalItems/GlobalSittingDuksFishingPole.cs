@@ -18,7 +18,7 @@ namespace TerrariaFishingOverhaul.Common.GlobalItems
 		}
 
         public override bool Shoot(Item item, Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
-			int bobberAmount = 3;
+			int bobberAmount = 1;
 			float spreadAmount = 75f; // how much the different bobbers are spread out.
 
 			for (int index = 0; index < bobberAmount; ++index) {
