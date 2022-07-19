@@ -32,6 +32,7 @@ namespace TerrariaFishingOverhaul.Content.Items.Accessories
 			//Item.masterOnly = true;
 			Item.vanity = true;
 			Item.rare = ItemRarityID.Master;
+			//Item.backSlot = realBackSlot;
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
