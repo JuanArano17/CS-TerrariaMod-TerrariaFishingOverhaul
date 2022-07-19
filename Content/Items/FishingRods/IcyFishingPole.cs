@@ -7,11 +7,11 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-    internal class IcyFishingPole : ModItem
+    internal class FrozenFishingPole : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Icy Fishing Pole");
+			DisplayName.SetDefault("Frozen Fishing Pole");
 			Tooltip.SetDefault("");
 
 			// Allows the pole to fish in lava
