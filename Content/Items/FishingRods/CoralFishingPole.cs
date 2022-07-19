@@ -7,8 +7,11 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-    internal class CoralFishingPole : ModItem
-	{
+    internal class CoralFishingPole : BiomeFishingRod{
+		public override int RodCrateType => ItemID.OceanCrate;
+
+		public override bool IsInRodBiome(Player player) => player.ZoneOcean;
+		
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Coral Fishing Pole");

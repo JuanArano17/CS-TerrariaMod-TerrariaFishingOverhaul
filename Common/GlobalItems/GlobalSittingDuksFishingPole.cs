@@ -4,7 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TerrariaFishingOverhaul.Common.Items.Global
+namespace TerrariaFishingOverhaul.Common.GlobalItems
 {
 	public class GlobalSittingDuksFishingPole : GlobalItem
 	{
