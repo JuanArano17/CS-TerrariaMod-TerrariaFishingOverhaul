@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 
 namespace TerrariaFishingOverhaul.Content.Projectiles
 {
-	public class IcyBobber : ModProjectile
+	public class FrozenBobber : ModProjectile
 	{
 		public static readonly Color[] PossibleLineColors = new Color[] {
 			new Color(0, 191, 255) // A blue color
@@ -23,7 +23,7 @@ namespace TerrariaFishingOverhaul.Content.Projectiles
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Icy Bobber");
+			DisplayName.SetDefault("Frozen Bobber");
 		}
 
 		public override void SetDefaults()
