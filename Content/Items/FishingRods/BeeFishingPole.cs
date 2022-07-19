@@ -45,7 +45,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 		}
 
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
-			int bobberAmount =  1; //Main.rand.Next(3, 6); 3 to 5 bobbers
+			int bobberAmount = 1; //Main.rand.Next(3, 6); 3 to 5 bobbers
 			float spreadAmount = 75f; // how much the different bobbers are spread out.
 
 			for (int index = 0; index < bobberAmount; ++index) {
