@@ -7,11 +7,11 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-    internal class BeeFishingPole : ModItem
+    internal class FisherBee : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bee Fishing Pole");
+			DisplayName.SetDefault("Fisher Bee");
 			Tooltip.SetDefault("");
 
 			// Allows the pole to fish in lava

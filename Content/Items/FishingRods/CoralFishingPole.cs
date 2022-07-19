@@ -10,7 +10,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
     internal class CoralFishingPole : BiomeFishingRod{
 		public override int RodCrateType => ItemID.OceanCrate;
 
-		public override bool IsInRodBiome(Player player) => player.ZoneOcean;
+		public override bool IsInRodBiome(Player player) => player.ZoneBeach;
 		
 		public override void SetStaticDefaults()
 		{
