@@ -7,7 +7,7 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-	public class FisherBee : ModItem
+	public class FisherBee : ModFishingRod
 	{
 		public override void SetStaticDefaults()
 		{

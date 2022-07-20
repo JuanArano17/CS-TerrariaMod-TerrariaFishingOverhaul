@@ -7,7 +7,7 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-	public class TruffleFishingPole : ModItem
+	public class TruffleFishingPole : ModFishingRod
 	{
 		public override void SetStaticDefaults()
 		{

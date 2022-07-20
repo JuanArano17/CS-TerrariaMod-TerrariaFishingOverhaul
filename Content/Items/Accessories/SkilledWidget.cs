@@ -7,7 +7,7 @@ namespace TerrariaFishingOverhaul.Content.Items.Accessories
 {
     public class SkilledWidget : ModItem
 	{
-		private int amountOfLines = 20;	// The amount of fishing lines added.
+		private int amountOfLines = 1;	// The amount of fishing lines added.
 
 		public override void SetStaticDefaults()
 		{

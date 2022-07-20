@@ -8,7 +8,7 @@ using TerrariaFishingOverhaul.Content.Items.FishingRods;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-	public class KrakensTentacle : ModItem
+	public class KrakensTentacle : ModFishingRod
 	{
 		public override void SetStaticDefaults() {
 			base.SetStaticDefaults();

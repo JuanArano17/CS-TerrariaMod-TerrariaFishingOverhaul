@@ -34,7 +34,7 @@ namespace TerrariaFishingOverhaul.Common.Players
 
         public override void CatchFish(FishingAttempt attempt, ref int itemDrop, ref int npcSpawn, ref AdvancedPopupRequest sonar, ref Vector2 sonarPosition)
         {
-            if (HoldingCoralFishingPole && Player.ZoneBeach && Main.rand.NextBool(25))
+            if (HoldingCoralFishingPole && Player.ZoneBeach && Main.rand.NextBool(18))
             {
                 itemDrop = ItemID.OceanCrate;
                 npcSpawn = 0;

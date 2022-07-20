@@ -7,7 +7,7 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-	public class FrozenFishingPole : ModItem
+	public class FrozenFishingPole : ModFishingRod
 	{
 		public int bobberAmount = 1;
 		public override void SetStaticDefaults()
