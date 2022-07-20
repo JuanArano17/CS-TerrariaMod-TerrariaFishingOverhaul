@@ -33,3 +33,13 @@ Changes to amount of fishing line in fishing items:   IN PROGRESS
 
 Special tanks to: ZetaBub, David F Dev.
 For being helping a lot in the discord server.
+
+
+Accesorio que tiene 1 linea extra como maximo
+Las demas lineas extra seran mediante armaduras.
+
+Armaduras a hacer:
+    - Armadura con tematica de regeneracion de vida
+    - Armadura con tematica de dodgear ataques
+    - Armadura con tematica de doble disparo a armas a rango
+    - Armadura con tematica de summoner con aura en la que si se acerca un enemigo, un pescado muerde, hace dmg y hace retroceder al enemigo.
