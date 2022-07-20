@@ -34,14 +34,14 @@ namespace TerrariaFishingOverhaul.Content.Items.Accessories
 		{
 			Recipe recipe1 = CreateRecipe();
 			recipe1.AddIngredient(ItemID.IronBar, 8);
-			recipe1.AddIngredient(ModContent.ItemType<CraftingItems.BasicFishingLine>(), 5);
+			recipe1.AddIngredient(ItemID.HighTestFishingLine);
 			recipe1.AddIngredient(ItemID.Hook);
 			recipe1.AddTile(TileID.WorkBenches);
 			recipe1.Register();
 			
 			Recipe recipe2 = CreateRecipe();
 			recipe2.AddIngredient(ItemID.LeadBar, 8);
-			recipe2.AddIngredient(ModContent.ItemType<CraftingItems.BasicFishingLine>(), 5);
+			recipe2.AddIngredient(ItemID.HighTestFishingLine);
 			recipe2.AddIngredient(ItemID.Hook);
 			recipe2.AddTile(TileID.WorkBenches);
 			recipe2.Register();
