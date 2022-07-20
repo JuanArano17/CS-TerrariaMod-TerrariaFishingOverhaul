@@ -9,6 +9,7 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
     internal class FrozenFishingPole : ModItem
 	{
+		public int bobberAmount = 1;
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Frozen Fishing Pole");

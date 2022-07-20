@@ -7,10 +7,8 @@ using Terraria.GameContent.Creative;
 
 namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 {
-    internal class CoralFishingPole : BiomeFishingRod{
-		public override int RodCrateType => ItemID.OceanCrate;
-
-		public override bool IsInRodBiome(Player player) => player.ZoneOcean;
+    internal class CoralFishingPole : ModItem{
+		public int bobberAmount = 1;
 		
 		public override void SetStaticDefaults()
 		{
@@ -48,10 +46,10 @@ namespace TerrariaFishingOverhaul.Content.Items.FishingRods
 		}
 
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
-			int bobberAmount =  1; //Main.rand.Next(3, 6); 3 to 5 bobbers
+			//int bobberAmount =  30; //Main.rand.Next(3, 6); 3 to 5 bobbers
 			float spreadAmount = 75f; // how much the different bobbers are spread out.
 
-			for (int index = 0; index < bobberAmount; ++index) {
+			for (int index = 0; index < player.GetModPlayer<Common.Players.FishingPlayer>().getBobberAmount(); ++index) {
 				Vector2 bobberSpeed = velocity + new Vector2(Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f, Main.rand.NextFloat(-spreadAmount, spreadAmount) * 0.05f);
 
 				// Generate new bobbers
