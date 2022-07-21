@@ -10,34 +10,27 @@ using Terraria.ModLoader;
 
 namespace TerrariaFishingOverhaul.Content.Projectiles
 {
-    public class ModBobber : ModProjectile
-    {
-		public static readonly Color[] PossibleLineColors = new Color[] {
-			new Color(66, 1, 22), // Rojo oscuro
-			new Color(56, 5, 133) // Violeta claro
+	public class ModBobber : ModProjectile
+	{
+		public Color[] PossibleLineColors = new Color[] 
+		{
+			new Color(255, 255, 255),
 		};
-
-		// This holds the index of the fishing line color in the PossibleLineColors array.
-		private int fishingLineColorIndex;
-
-		private Color FishingLineColor => PossibleLineColors[fishingLineColorIndex];
-
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Kraken Bobber");
+			DisplayName.SetDefault("Mod Bobber");
 		}
+
+		// This holds the index of the fishing line color in the PossibleLineColors array.
+		public int fishingLineColorIndex;
+
+		public Color FishingLineColor => PossibleLineColors[fishingLineColorIndex];
+
+		
 
 		public override void SetDefaults()
 		{
-			// These are copied through the CloneDefaults method
-			// Projectile.width = 14;
-			// Projectile.height = 14;
-			// Projectile.aiStyle = 61;
-			// Projectile.bobber = true;
-			// Projectile.penetrate = -1;
-			// Projectile.netImportant = true;
 			Projectile.CloneDefaults(ProjectileID.BobberWooden);
-
 			DrawOriginOffsetY = -8; // Adjusts the draw position
 		}
 
@@ -47,7 +40,6 @@ namespace TerrariaFishingOverhaul.Content.Projectiles
 			fishingLineColorIndex = (byte)Main.rand.Next(PossibleLineColors.Length);
 		}
 
-		// What if we want to randomize the line color
 		public override void AI()
 		{
 			// Always ensure that graphics-related code doesn't run on dedicated servers via this check.
